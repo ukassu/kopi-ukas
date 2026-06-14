@@ -30,8 +30,12 @@ fun RewardScreen(
     val member by viewModel.selectedMember.collectAsState()
     val rewards = listOf(
         Reward("Espresso", 50),
+        Reward("Americano", 75),
         Reward("Cappuccino", 100),
-        Reward("Latte Gratis", 150)
+        Reward("Iced Latte", 150),
+        Reward("Mocha", 200),
+        Reward("Pistachio", 225),
+        Reward("Vienna Coffee", 250)
     )
 
     var showDialog by remember { mutableStateOf<Reward?>(null) }
